@@ -1,0 +1,81 @@
+{
+	"services":{
+		"labs_assets_svc":{
+			"type":"html_assets_svc",
+			"routes":[
+				{
+					"route":"/css/.*.css",
+					"directory":"./public/"
+				},
+				{
+					"route":"/js/.*.js",
+					"directory":"public/"
+				},
+				{
+					"route":"/img",
+					"directory":"./public/"
+				},
+				{
+					"route":"/html/*.html",
+					"directory":"./public/"
+				},
+				{
+					"route":"/plugins",
+					"plugins":["Foundation6", "Labs", "DefaultRendering"]
+				},
+				{
+					"is_global":true,
+					"route":"$/^",
+					"directory":"public/assets",
+					"default":"index.html"
+				}
+			],
+			"security":{
+				"enabled":false,
+				"authentication":{
+					"enabled":false,
+					"engines":[]
+				},
+				"authorization":{
+					"enabled":false,
+					"engines":[],
+					"permissions":{
+						"*":["*"]
+					}
+				}
+			}
+		},
+
+		"labs_app_svc":{
+			"type":"middlewares_svc",
+			"routes":[
+				{
+					"route":"/home",
+					"page_view":"numerical_lab",
+					"page_menubar":"labs_menubar"
+				},
+				{
+					"route":"/home2",
+					"page_view":"numerical_calculation_lab",
+					"page_menubar":"labs_menubar"
+				}
+			]
+		},
+		
+		"resources_svc":{
+			"type":"resources_svc"
+		},
+		
+		"labs_messages_svc":{
+			"type":"messages_svc"
+		},
+		
+		"labs_topology_svc":{
+			"type":"topology_svc"
+		},
+		
+		"labs_logs_svc":{
+			"type":"logs_svc"
+		}
+	}
+}

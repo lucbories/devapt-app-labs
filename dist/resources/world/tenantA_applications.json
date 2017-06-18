@@ -1,0 +1,58 @@
+{
+	"applications":{
+		"labs_assets":{
+			"title":"Labs assets provider",
+			"url":"labs_assets",
+			"license":"APACHE-LICENSE-2.0",
+			
+			"provided_services":["labs_assets_svc"],
+			"used_services":[],
+			
+			"used_packages": ["labs_app_pkg"],
+			"used_plugins":["DefaultServices"],
+			
+			"assets":{
+				"css":[],
+				"js":[],
+				"img":[],
+				"index":""
+			}
+		},
+		
+		"labs_app":{
+			"title":"Labs application",
+			"url":"labs_app",
+			"license":"APACHE-LICENSE-2.0",
+
+			"default_view":"numerical_lab",
+			"default_menubar":"labs_menubar",
+			
+			"provided_services":["labs_app_svc", "labs_num_calc_svc", "labs_topology_svc", "labs_logs_svc", "labs_messages_svc", "resources_svc"],
+			"used_services":[],
+			
+			"used_packages": ["labs_app_pkg", "labs_features_pkg"],
+			"used_plugins":["DefaultServices", "Labs", "Foundation6", "DefaultRendering"],
+			
+			"assets":{
+				"css":[
+				],
+				"js":[
+					{
+						"id":"js-browser",
+						"src":"plugins/DefaultRendering/browser.min.js"
+					},
+					{
+						"id":"js-devapt-core-browser",
+						"src":"plugins/Labs/devapt-browser.js"
+					},
+					{
+						"id":"js-devapt-bootstrap",
+						"src":"plugins/DefaultRendering/devapt-bootstrap.js"
+					}
+				],
+				"img":[],
+				"index":""
+			}
+		}
+	}
+}

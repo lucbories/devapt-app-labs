@@ -1,0 +1,21 @@
+{
+	"nodes":"nodes.json",
+	
+	"tenants":{
+		"tenantA":{
+			"applications":"tenantA_applications.json",
+			"packages":"tenantA_packages.json",
+			"security":{}
+		}
+	},
+
+	"deployments":"deployments.json",
+
+	"security":"security.json",
+
+	"plugins":"plugins.json",
+	
+	"loggers":"loggers.json",
+	
+	"traces":"traces.json"
+}

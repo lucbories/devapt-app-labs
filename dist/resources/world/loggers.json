@@ -1,0 +1,33 @@
+{
+	"loggers":{
+		"winston":{
+			"transports":{
+				"labs_file_debug":{
+					"type":"file",
+					"level": "debug",
+					"filename": "./tmp/debug_by_json.log",
+					"maxsize":500000,
+					"maxFiles":2
+				},
+				"labs_file_info":{
+					"type":"file",
+					"level": "info",
+					"filename": "./tmp/info_by_json.log",
+					"maxsize":200000,
+					"maxFiles":2
+				},
+				"labs_file_error":{
+					"type":"file",
+					"level": "error",
+					"filename": "./tmp/error_by_json.log",
+					"maxsize":100000,
+					"maxFiles":2
+				},
+				"labs_console":{
+					"type":"console",
+					"level":"info"
+				}
+			}
+		}
+	}
+}

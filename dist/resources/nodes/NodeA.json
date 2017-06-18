@@ -1,0 +1,59 @@
+{
+	"is_master":true,
+	"name":"NodeA",
+	
+	"master":{
+		"name":"NodeA",
+		
+		"msg_bus":{
+			"package":"default",
+			"protocle":"",
+			"type":"Server",
+			"host":"localhost",
+			"port":"N/A"
+		},
+		"logs_bus":{
+			"package":"default",
+			"protocle":"",
+			"type":"Server",
+			"host":"localhost",
+			"port":"N/A"
+		},
+		"metrics_bus":{
+			"package":"default",
+			"protocle":"",
+			"type":"Server",
+			"host":"localhost",
+			"port":"N/A"
+		}
+	},
+	
+	"base_dir": "",
+	
+	"settings_provider": {
+		"source":"local_file",
+		"relative_path":"world.json"
+	},
+	
+	"trace": {
+		"stages":{
+			"enabled":true,
+
+			"RuntimeStage0":{
+				"enabled":true
+			},
+			
+			"RuntimeStage1":{
+				"enabled":true
+			},
+			
+			"RuntimeStage2":{
+				"enabled":true
+			},
+			
+			"RuntimeStage3":{
+				"enabled":false
+			}
+		}
+	}
+}

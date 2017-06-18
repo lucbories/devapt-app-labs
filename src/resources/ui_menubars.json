@@ -1,0 +1,48 @@
+{
+	"menubars":{
+		"default_menubar":{
+			"type":"Menubar",
+			
+			"state":{
+				"label":"Devtools",
+				"app_url":"devtools",
+				"items":[
+					{
+						"label":"Runtime",
+						"items":[
+							{ "command":"display_defined_topology" },
+							{ "command":"display_deployed_topology" }
+						]
+					},
+					{
+						"label":"Monitor",
+						"items":[
+							{ "command":"display_logical_topology_monitor" },
+							{ "command":"display_physical_topology_monitor" },
+							{ "command":"display_logs_monitor" },
+							{ "command":"display_messages_monitor" },
+							{ "command":"display_metrics_monitor" },
+							{ "command":"display_availability_monitor" }
+						]
+					},
+					{
+						"label":"Admin",
+						"items":[
+							{ "command":"display_datas_admin" },
+							{ "command":"display_resources_admin" },
+							{ "command":"display_runtime_admin" },
+							{ "command":"display_deployment_admin" }
+						]
+					},
+					{
+						"label":"Debug App",
+						"items":[
+							{ "command":"display_logs_debug" },
+							{ "command":"display_state_debug" }
+						]
+					}
+				]
+			}
+		}
+	}
+}

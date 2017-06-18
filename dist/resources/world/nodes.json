@@ -1,0 +1,24 @@
+{
+	"nodes":{
+		"NodeA":{
+			"host":"localhost",
+			"is_master":true,
+			"servers":{
+				"NodeALocal8080":{
+					"type":"express",
+					"port":8080,
+					"protocole":"http",
+					"middlewares":[],
+					"use_socketio":true,
+					
+					"security": {
+						"authentication": {
+							"enabled":false,
+							"plugins":[]
+						}
+					}
+				}
+			}
+		}
+	}
+}

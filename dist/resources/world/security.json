@@ -1,0 +1,19 @@
+{
+	"security":{
+		"is_readonly":false,
+		
+		"datasources":[],
+		
+		"authentication": {
+			"enabled":false,
+			
+			"plugins":{},
+			
+			"default_plugins": []
+		},
+		
+		"authorization": {
+			"enabled":false
+		}
+	}
+}

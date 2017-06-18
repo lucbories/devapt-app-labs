@@ -1,0 +1,91 @@
+{
+	"commands":{
+		"display_logical_topology_monitor":{
+			"type":"display",
+			"url":"/monitor/topology/logical",
+			"middleware":"devtools_panel",
+			"label":"Logical Topology"
+		},
+		"display_physical_topology_monitor":{
+			"type":"display",
+			"url":"/monitor/topology/physical",
+			"middleware":"devtools_panel",
+			"label":"Physical Topology"
+		},
+		"display_logs_monitor":{
+			"type":"display",
+			"middleware":"devtools_panel",
+			"view":"logs_view",
+			"url":"/monitor/logs",
+			"label":"Logs"
+		},
+		"display_messages_monitor":{
+			"type":"display",
+			"middleware":"devtools_panel",
+			"view":"messages_view",
+			"url":"/monitor/messages",
+			"label":"Messages"
+		},
+		"display_metrics_monitor":{
+			"type":"display",
+			"middleware":"devtools_panel",
+			"view":"metrics_tabs",
+			"url":"/monitor/metrics",
+			"label":"Metrics"
+		},
+		"display_availability_monitor":{
+			"type":"display",
+			"view":"devtools_availability_monitor",
+			"url":"/monitor/availability",
+			"label":"Availability monitor"
+		},
+		"display_defined_topology":{
+			"type":"display",
+			"middleware":"devtools_panel",
+			"url":"/topology/defined",
+			"label":"Defined Topology"
+		},
+		"display_deployed_topology":{
+			"type":"display",
+			"middleware":"devtools_panel",
+			"url":"/topology/deployed",
+			"label":"Deployed Topology"
+		},
+		"display_datas_admin":{
+			"type":"display",
+			"view":"devtools_datas_admin",
+			"url":"/admin/datas",
+			"label":"Datas admin."
+		},
+		"display_resources_admin":{
+			"type":"display",
+			"view":"devtools_resources_admin",
+			"url":"/admin/resources",
+			"label":"Resources admin."
+		},
+		"display_runtime_admin":{
+			"type":"display",
+			"view":"devtools_runtime_admin",
+			"url":"/admin/runtime",
+			"label":"Runtime admin."
+		},
+		"display_deployment_admin":{
+			"type":"display",
+			"view":"devtools_deployment_admin",
+			"url":"/admin/deployment",
+			"label":"Deployment admin."
+		},
+		"display_state_debug":{
+			"type":"display",
+			"view":"devtools_state_debug",
+			"url":"/debug/state",
+			"label":"Application state"
+		},
+		"display_logs_debug":{
+			"type":"display",
+			"view":"devtools_logs_debug",
+			"url":"/debug/logs",
+			"label":"Application logs"
+		}
+	}
+}

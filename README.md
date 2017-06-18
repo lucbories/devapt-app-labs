@@ -1,76 +1,46 @@
-# Devapt - Developpers Tools Application
+# Devapt Application for sciencifical labs.
 
-Current version: 1.0.0
+Current version: 2.0.0
 Please see the develop branch for current development.
 
 
 
 ## What is it?
 
-Developpers Tools application helps you to develop applications using devapt features and provides:
-* logs viewer
-* buses messages spy
-* metrics monitoring
-* runtime settings display
-* physical and logical topology display
-* more: coming soon
+...
 
 
 
-## USAGE
+## CONTRIBUTE
 Get package source:
 ```
-mkdir devapt-app-devtools
-cd devapt-app-devtools
+mkdir devapt-app-labs
+cd devapt-app-labs
 git init
-git remote add origin https://github.com/lucbories/devapt-app-devtools.git
+git remote add origin https://github.com/lucbories/devapt-app-labs.git
 git pull origin master
 ```
 
 
-Edit "start_node.cmd" and remove "OPENSHIFT_BINDINGS" variable if needed.
-
-
-Get dependencies packages and run application:
-```
-cd devapt-app-devtools
-npm install
-npm start
-```
-
-An express server is now listening on port 8081 by default.
-Connect to http://mydomain/devtools/ on a browser.
-
-Navigate into menus:
-* Runtime: server application settings and state
-  * All settings
-* Monitor
-  * Logical Topology
-  * Physical Topology
-  * Logs
-  * Messages
-  * Metrics
-* State: browser application state (coming soon)
-* API (coming soon)
-* Crud (coming soon)
+## USAGE
 
 
 
 ## LICENCE
 
-See [LICENSE](https://github.com/lucbories/devapt-app-devtools/tree/master/LICENSE)
+See [LICENSE](https://github.com/lucbories/devapt-app-labs/tree/master/LICENSE)
 
 
 
 ## BUGS
 
-See [ISSUES](https://github.com/lucbories/devapt-app-devtools/issues)
+See [ISSUES](https://github.com/lucbories/devapt-app-labs/issues)
 
 
 
 ## Technical details
 
-devapt-app-devtools use devapt and devapt-devtools packages.
+devapt-app-labs use devapt and devapt-labs packages.
 
 
 
@@ -82,4 +52,4 @@ Please see the file called INSTALL.md.
 
 ## Contacts
 
-To subscribe to news or report a bug or contribute to the project, use the project website at https://github.com/lucbories/devapt-app-devtools.
+To subscribe to news or report a bug or contribute to the project, use the project website at https://github.com/lucbories/devapt-app-labs.

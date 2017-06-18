@@ -1,0 +1,33 @@
+{
+	"traces":{
+		"loading":false,
+
+		"modules":{
+			".*":false
+		},
+		
+		"classes":{
+			"TopologyDefine*":false,
+			"TopologyDeploy*":false,
+			".*Manager":false,
+			"ExpressServer":false,
+			"aTopologyDefineMenubar":false,
+			"aTopologyDefineApplication":false,
+			"aTopologyDefineCommand":false,
+			"a.*Service":false,
+			".*Authentication.*":false,
+			".*Authorization.*":false,
+			"Security":false,
+			".*Provider":false,
+			"ClientRuntime":false,
+			"UI":false,
+			"Router":false,
+			"Component":false,
+			".*":false
+		},
+		
+		"instances":{
+			".*":false
+		}
+	}
+}

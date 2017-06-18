@@ -1,0 +1,31 @@
+{
+	"deployments":{
+		"tenantA":{
+			"labs_assets":{
+				"assets":{},
+				"services":{
+					"labs_assets_svc": { "servers":["NodeALocal8080"], "filters":["*"] }
+				}
+			},
+			"labs_app":{
+				"assets":{
+					"regions":{
+						"all":{
+							"style":["labs_assets_svc"],
+							"script":["labs_assets_svc"],
+							"image":["labs_assets_svc"],
+							"html":["labs_assets_svc"]
+						}
+					}
+				},
+				"services":{
+					"resources_svc": { "servers":["NodeALocal8080"] },
+					"labs_num_calc_svc": { "servers":["NodeALocal8080"] },
+					"labs_topology_svc": { "servers":["NodeALocal8080"] },
+					"labs_logs_svc": { "servers":["NodeALocal8080"] },
+					"labs_messages_svc": { "servers":["NodeALocal8080"] }
+				}
+			}
+		}
+	}
+}

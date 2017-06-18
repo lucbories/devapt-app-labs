@@ -1,0 +1,48 @@
+{
+  "name": "devapt-app-labs",
+  "version": "2.0.0",
+  "description": "Amazing labs",
+  "author": {
+    "name": "Luc BORIES",
+    "email": "luc.bories@gmail.com",
+    "url": "https://github.com/lucbories"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucbories/devapt-app-labs.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/lucbories/devapt-app-labs/issues"
+  },
+  "homepage": "https://github.com/lucbories/devapt-app-labs#readme.md",
+  "main": "",
+  "engines": {
+    "node": ">=4.4.4"
+  },
+  "directories": {
+    "dist": "./dist"
+  },
+  "scripts": {
+    "start": "node node_modules/devapt-core-server/dist/js/start_node.js -n NodeA -t dist/resources/world -b dist/resources -s NodeA:NodeALocal8080"
+  },
+  "keywords": [
+    "science",
+    "lab",
+    "workspace",
+    "devapt",
+    "math",
+    "plot",
+    "graphs"
+  ],
+  "dependencies": {
+    "devapt-core-common": "^2.0.0",
+    "devapt-core-server": "^2.0.0",
+    "devapt-core-services": ">=2.0.0",
+    "devapt-features-labs": "^1.0.0"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "parallelshell": "^2.0.0"
+  }
+}
