@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MathBox - Plot</title>
+
+	<script src="/labs_assets/js/mathbox-bundle.js"></script>
+	<script src="/labs_assets/js/mathbox_init.js"></script>
+	<script src="/labs_assets/js/mathbox_plot.js"></script>
+	<script src="/labs_assets/plugins/DefaultRendering/devapt-bootstrap.js?username=default&password=default&token=default"></script>
+	<script src="/labs_assets/plugins/Labs/devapt-browser.js?username=default&password=default&token=default"></script>
+
+	<link rel="stylesheet" href="/labs_assets/css/mathbox.css">
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+	<script>window.__INITIAL_STATE__ = {
+		"credentials":{
+			"tenant":"tenantA",
+			"env":"dev",
+			"application":"testbus",
+
+			"token":"",
+			"user_name":"",
+			"user_pass_digest":"",
+			
+			"ts_login":0,
+			"ts_expiration":0,
+
+			"errors_count":0,
+			"renew_count":0,
+
+			"hash":undefined
+		},
+		"commands":{}
+	}
+	</script>
+
+	<script>
+		// var interval_size = 64
+		// var circle_steps = 20
+		// var z_circles = 10
+		// var interval_size = z_circles*circle_steps
+
+		// var circle_step = function (i) { return i % circle_steps }
+		// var z_circle_index = function (i) { return Math.floor(i / circle_steps) } //console.log('z_circle_index=[%n] for i=[%n]', Math.floor(i / circle_steps), i);  
+
+		// var interval_theta = 2 * Math.PI / (circle_steps - 1)
+		// var interval_phi = Math.PI / interval_size
+
+		// var Phi   = function(x, i, t) { return z_circle_index(i) == 0 ? 0 : Math.PI / z_circle_index(i) }
+		// var Theta = function(x, i, t) { return circle_step(i) * interval_theta }
+
+		// var Xxit = function(x, i, t) { return Math.cos( Phi(x, i, t) ) * Math.cos( Theta(x, i, t) ) }
+		// var Yxit = function(x, i, t) { return Math.cos( Phi(x, i, t) ) * Math.sin( Theta(x, i, t) ) }
+		// var Zxit = function(x, i, t) { return z_circle_index(i) / z_circles - 0.5 }
+
+		// var Xt = function(x, i, t) { return Math.cos( i*Math.PI/interval_size ) }
+		// var Yt = function(x, i, t) { return Math.sin( i*Math.PI/interval_size ) }
+
+		
+
+		// fn_plot3d(Xxit, Yxit, Zxit, [-1,1], [-1,1], [-1,1], interval_size, {})
+		
+		// fn_plot2d(
+		// 	{
+		// 		type:'y(x)',
+		// 		'x':[-Math.PI, Math.PI, 0.1],
+		// 		'y':function(x){ return Math.sin(x) }
+		// 	}
+		// )
+
+		fn_plot2d(
+			{
+				type:'z(x,y)',
+				'x':[-Math.PI, Math.PI, 0.1],
+				'y':[-Math.PI, Math.PI, 0.1],
+				'z':function(x,y){ return Math.sin(1*x + 1*x*y) /*Math.sin(x) + Math.cos(y)*/ }
+			}
+		)
+
+
+		// area expr= function (emit, x, y, i, j, time, delta) { ... }
+		// axes
+
+
+
+		// var vector =
+		// view.interval({
+		// 	expr: function (emit, x, i, t) {
+		// 		emit( 0, 0, 0);
+		// 		emit( Xt(x, 2*i, t), Yt(x, 2*i, t), Zt(x, 2*i, t) );
+		// 	},
+		// 	width: interval_size / 2,
+		// 	channels: 3,
+		// 	items: 2,
+		// })
+		// .vector({
+		// 	end: true,
+		// 	width: 2,
+		// 	color: '#50A000',
+		// });
+
+
+
+
+		// var play = mathbox.play({
+		//   target: 'cartesian',
+		//   pace: 5,
+		//   to: 2,
+		//   loop: true,
+		//   script: [
+		//     {props: {rotation: [1,1,1]}},
+		//     {props: {range: [[-4, 4], [-2, 2]]}},
+		//     {props: {range: [[-2, 2], [-1, 1]]}},
+		//   ]
+		// });
+
+		// var play = mathbox.play({
+		//   target: 'cartesian',
+		//   pace: 5,
+		//   to: 2,
+		//   loop: true,
+		//   script: [
+		//     {props: {range: [[-2, 2], [-1, 1]]}},
+		//     {props: {range: [[-4, 4], [-2, 2]]}},
+		//     {props: {range: [[-2, 2], [-1, 1]]}},
+		//   ]
+		// });
+
+	</script>
+	
+</body>
+</html>

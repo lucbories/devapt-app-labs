@@ -5,19 +5,24 @@
 			"routes":[
 				{
 					"route":"/css/.*.css",
-					"directory":"./public/"
+					"directory":"../../../public/"
 				},
 				{
 					"route":"/js/.*.js",
-					"directory":"public/"
+					"directory":"../../../public/"
 				},
 				{
 					"route":"/img",
-					"directory":"./public/"
+					"directory":"../../../public/"
 				},
 				{
 					"route":"/html/*.html",
-					"directory":"./public/"
+					"directory":"../../../public/"
+				},
+				{
+					"route":"/html/$",
+					"directory":"../../../public/labs_assets/html/",
+					"default":"index.html"
 				},
 				{
 					"route":"/plugins",
@@ -25,8 +30,8 @@
 				},
 				{
 					"is_global":true,
-					"route":"$/^",
-					"directory":"public/assets",
+					"route":"^/$",
+					"directory":"../../../public/labs_assets/html",
 					"default":"index.html"
 				}
 			],

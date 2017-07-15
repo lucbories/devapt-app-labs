@@ -10,7 +10,7 @@
 			"TopologyDefine*":false,
 			"TopologyDeploy*":false,
 			".*Manager":false,
-			"ExpressServer":false,
+			"ExpressServer":true,
 			"aTopologyDefineMenubar":false,
 			"aTopologyDefineApplication":false,
 			"aTopologyDefineCommand":false,
