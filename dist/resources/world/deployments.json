@@ -20,7 +20,7 @@
 				},
 				"services":{
 					"resources_svc": { "servers":["NodeALocal8080"] },
-					"labs_num_calc_svc": { "servers":["NodeALocal8080"] },
+					"labs_mw_services": { "servers":["NodeALocal8080"] },
 					"labs_topology_svc": { "servers":["NodeALocal8080"] },
 					"labs_logs_svc": { "servers":["NodeALocal8080"] },
 					"labs_messages_svc": { "servers":["NodeALocal8080"] }

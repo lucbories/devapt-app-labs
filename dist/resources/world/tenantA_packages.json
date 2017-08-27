@@ -7,17 +7,6 @@
 			"includes":[],
 			"commands":"",
 			"services":"services.json"
-		},
-		"labs_features_pkg":{
-			"base_dir":"../../../node_modules/devapt-features-labs/dist/resources",
-			"resources":[
-				"ui_menubars.json",
-				"ui_labs.json"
-			],
-			"templates":["labs_plot_features.json", "labs_terminal_features.json", "labs_algebric_features.json"],
-			"includes":[],
-			"commands":"labs_commands.json",
-			"services":"labs_services.json"
 		}
 	}
 }

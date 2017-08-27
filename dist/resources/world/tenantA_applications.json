@@ -27,10 +27,10 @@
 			"default_view":"numerical_lab",
 			"default_menubar":"labs_menubar",
 			
-			"provided_services":["labs_app_svc", "labs_num_calc_svc", "labs_topology_svc", "labs_logs_svc", "labs_messages_svc", "resources_svc"],
+			"provided_services":["labs_mw_services", "labs_topology_svc", "labs_logs_svc", "labs_messages_svc", "resources_svc"],
 			"used_services":[],
 			
-			"used_packages": ["labs_app_pkg", "labs_features_pkg"],
+			"used_packages": ["labs_app_pkg", "labs_features_pkg", "labs_pendulum_pkg"],
 			"used_plugins":["DefaultServices", "Labs", "Foundation6", "DefaultRendering"],
 			
 			"assets":{
@@ -44,6 +44,18 @@
 					{
 						"id":"js-devapt-core-browser",
 						"src":"plugins/Labs/devapt-browser.js"
+					},
+					{
+						"id":"js-svgjs",
+						"src":"plugins/Labs/svg.js"
+					},
+					{
+						"id":"js-physicsjs",
+						"src":"plugins/Labs/physicsjs.js"
+					},
+					{
+						"id":"js-matterjs",
+						"src":"plugins/Labs/matterjs.js"
 					},
 					{
 						"id":"js-devapt-bootstrap",

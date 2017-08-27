@@ -4,7 +4,9 @@
 	"tenants":{
 		"tenantA":{
 			"applications":"tenantA_applications.json",
-			"packages":"tenantA_packages.json",
+			"packages":[
+				"tenantA_packages.json",
+				"../../../node_modules/devapt-features-labs/dist/resources/labs_packages.json"],
 			"security":{}
 		}
 	},

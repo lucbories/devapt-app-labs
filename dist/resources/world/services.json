@@ -50,22 +50,6 @@
 				}
 			}
 		},
-
-		"labs_app_svc":{
-			"type":"middlewares_svc",
-			"routes":[
-				{
-					"route":"/home",
-					"page_view":"numerical_lab",
-					"page_menubar":"labs_menubar"
-				},
-				{
-					"route":"/home2",
-					"page_view":"numerical_calculation_lab",
-					"page_menubar":"labs_menubar"
-				}
-			]
-		},
 		
 		"resources_svc":{
 			"type":"resources_svc"

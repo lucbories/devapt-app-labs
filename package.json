@@ -1,7 +1,7 @@
 {
   "name": "devapt-app-labs",
   "version": "2.0.0",
-  "description": "Amazing labs",
+  "description": "Amazing labs application",
   "author": {
     "name": "Luc BORIES",
     "email": "luc.bories@gmail.com",
@@ -39,6 +39,7 @@
     "devapt-core-common": "^2.0.0",
     "devapt-core-server": "^2.0.0",
     "devapt-core-services": ">=2.0.0",
+    "devapt-features-foundation": "^2.0.0",
     "devapt-features-labs": "^1.0.0"
   },
   "devDependencies": {
