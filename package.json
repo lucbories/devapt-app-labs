@@ -36,14 +36,11 @@
     "graphs"
   ],
   "dependencies": {
-    "devapt-core-common": "^2.0.0",
-    "devapt-core-server": "^2.0.0",
+    "devapt-core-common": ">=2.0.0",
+    "devapt-core-server": ">=2.0.0",
     "devapt-core-services": ">=2.0.0",
-    "devapt-features-foundation": "^2.0.0",
-    "devapt-features-labs": "^1.0.0"
+    "devapt-features-foundation6": ">=1.0.0",
+    "devapt-features-labs": ">=1.0.0"
   },
-  "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0",
-    "parallelshell": "^2.0.0"
-  }
+  "devDependencies": {}
 }
